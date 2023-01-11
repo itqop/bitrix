@@ -16,7 +16,8 @@ function out($var, $var_name = '') {
 }
 
 function call($method, $params){
-    $queryUrl = 'http://'.$_REQUEST['DOMAIN'].'/rest/'.$method.'.json';
+    $queryUrl = 'http://10.11.0.49/rest/58/u6cichq19ndha8gf/'.$method.'.json';
+    //$queryUrl = 'http://'.$_REQUEST['DOMAIN'].'/rest/'.$method.'.json';
     $queryData = http_build_query(array_merge($params, array("auth" => $_REQUEST['AUTH_ID'])));
     
     
