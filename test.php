@@ -40,6 +40,6 @@ out($result);
 
 #call('task.stages.get', array(entityid => 1, isAdmin => true, ));
 call('event.bind', [
-    'event' => 'OnTaskUpdate',
+    'event' => 'ONTASKUPDATE',
     'handler' => 'http://10.11.0.49/webhooks/bitrix/handler.php'
 ]);

@@ -1,8 +1,8 @@
 <?
-define('C_REST_CLIENT_ID','local.63be647bda7506.53198987');//Application ID
-define('C_REST_CLIENT_SECRET','zn35pAsDsqAVEjf2GNVD61uft35dqNo4Og0ikYIUNgXfzm2Avk');//Application key
+define('C_REST_CLIENT_ID','local.63bd18ad86f6d1.01316410');//Application ID
+define('C_REST_CLIENT_SECRET','CS76Cb4t5pg0PLFGgccjES9pCwawqUIuMcmvsoQJ1Z4IzDWIdA');//Application key
 // or
-define('C_REST_WEB_HOOK_URL','http://10.11.0.49/rest/58/u6cichq19ndha8gf/');//url on creat Webhook
+//define('C_REST_WEB_HOOK_URL','http://10.11.0.49/rest/58/u6cichq19ndha8gf/');//url on creat Webhook
 
 define('C_REST_CURRENT_ENCODING','windows-1251');
 define('C_REST_IGNORE_SSL',true);//turn off validate ssl by curl
