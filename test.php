@@ -15,13 +15,7 @@ function out($var, $var_name = '') {
 
 #out($_REQUEST);
 
-function curls(){
-
-$method = 'task.stages.get';
-$params = array(entityid => 1,
-                isAdmin => true,
-);
-
+function call($method, $params){
 $queryUrl = 'http://'.$_REQUEST['DOMAIN'].'/rest/'.$method.'.json';
 $queryData = http_build_query(array_merge($params, array("auth" => $_REQUEST['AUTH_ID'])));
 
@@ -43,3 +37,9 @@ curl_close($curl);
 out($result);
 
 };
+
+#call('task.stages.get', array(entityid => 1, isAdmin => true, ));
+call('event.bind', [
+    'event' => 'OnTaskUpdate',
+    'handler' => 'http://10.11.0.49/webhooks/bitrix/handler.php'
+]);
