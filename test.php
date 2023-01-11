@@ -47,3 +47,10 @@ call('event.bind', [
 call('event.test', [
     'any' => 'data'
 ]);
+
+call('tasks.task.update', ['taskId' => 29, 'fields' => ['TITLE' => 'YRA']]);
+
+file_put_contents(
+    __DIR__ . '/log/' . time() . '.txt',
+    var_export($_REQUEST, true)
+ );
