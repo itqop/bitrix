@@ -1,4 +1,8 @@
 <?
+file_put_contents(
+    __DIR__ . '/log/' . time() . '.txt',
+    var_export($_REQUEST, true)
+ );
 function out($var, $var_name = '') {
     echo '<pre style="outline: 1px dashed red;padding:5px;margin:10px;color:white;background:black;">';
     if ( !empty($var_name)) {
@@ -35,3 +39,5 @@ function call($method, $params){
     };
 
 call('tasks.task.update', ['taskId' => 29, 'fields' => ['TITLE' => 'YRA']]);
+
+
